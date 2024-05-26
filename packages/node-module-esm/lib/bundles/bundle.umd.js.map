@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.umd.js","sources":["../../src/echo/index.ts"],"sourcesContent":["export const echo = (text: string): string => {\n  console.log(text)\n  return text;\n};\n"],"names":["echo","text","console","log"],"mappings":";;;;;;AAAaA,QAAAA,IAAI,GAAIC,IAAY,IAAa;EAC5CC,EAAAA,OAAO,CAACC,GAAG,CAACF,IAAI,CAAC,CAAA;EACjB,EAAA,OAAOA,IAAI,CAAA;EACb;;;;;;;;"}

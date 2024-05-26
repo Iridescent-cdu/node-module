@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["echo","text","console","log"],"sources":["../../../src/echo/index.ts"],"sourcesContent":["export const echo = (text: string): string => {\n  console.log(text)\n  return text;\n};\n"],"mappings":"AAAA,OAAO,MAAMA,IAAI,GAAIC,IAAY,IAAa;EAC5CC,OAAO,CAACC,GAAG,CAACF,IAAI,CAAC;EACjB,OAAOA,IAAI;AACb,CAAC","ignoreList":[]}

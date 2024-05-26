@@ -2,12 +2,30 @@
   "name": "module-esm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf lib",
+    "declarations": "tsc -p tsconfig.json",
+    "build:esm": "cross-env BABEL_ENV=esmUnbundled babel src --extensions '.ts' --out-dir 'lib/esm' --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --extensions '.ts' --out-dir 'lib/cjs' --source-maps",
+    "build:bundles": "cross-env BABEL_ENV=esmBundled rollup -c",
+    "build": "npm-run-all -l clean -p build:esm build:cjs build:bundles declarations",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "exports": {
+    "require": "./lib/cjs/index.js",
+    "import": "./lib/esm/index.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Iridescent",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.24.6",

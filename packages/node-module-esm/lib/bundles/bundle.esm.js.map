@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.esm.js","sources":["../../src/echo/index.ts"],"sourcesContent":["export const echo = (text: string): string => {\n  console.log(text)\n  return text;\n};\n"],"names":["echo","text","console","log"],"mappings":"AAAaA,MAAAA,IAAI,GAAIC,IAAY,IAAa;AAC5CC,EAAAA,OAAO,CAACC,GAAG,CAACF,IAAI,CAAC,CAAA;AACjB,EAAA,OAAOA,IAAI,CAAA;AACb;;;;"}

@@ -8,6 +8,12 @@ importers:
 
   .: {}
 
+  examples/node-module-test:
+    dependencies:
+      module-esm:
+        specifier: workspace:*
+        version: link:../../packages/node-module-esm
+
   packages/node-module-esm:
     devDependencies:
       '@babel/cli':

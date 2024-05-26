@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "outDir": "lib/types",
+    "lib": [
+      "ES2015",
+      "dom"
+    ],
+  },
+  "include": [
+    "./src/index.ts"
+  ],
+}
